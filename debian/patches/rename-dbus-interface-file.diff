@@ -1,0 +1,16 @@
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index 5d731eb..9a2335c 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -85,5 +85,10 @@ install(FILES
+ 
+ install(FILES
+     org.kde.StatusNotifierItem.xml
++    DESTINATION ${DBUS_INTERFACES_INSTALL_DIR}
++    RENAME kf5_org.kde.StatusNotifierItem.xml)
++
++install(FILES
+     org.kde.StatusNotifierWatcher.xml
+-    DESTINATION ${DBUS_INTERFACES_INSTALL_DIR})
++    DESTINATION ${DBUS_INTERFACES_INSTALL_DIR}
++    RENAME kf5_org.kde.StatusNotifierWatcher.xml)

@@ -1,0 +1,5 @@
+usr/include/KF5/
+usr/lib/*/libKF5Notifications.so
+usr/lib/*/cmake/KF5Notifications/
+usr/share/dbus-1/interfaces/kf5_org.kde.StatusNotifierItem.xml
+usr/share/dbus-1/interfaces/kf5_org.kde.StatusNotifierWatcher.xml
