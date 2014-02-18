@@ -4,14 +4,14 @@ Priority: optional
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Scarlett Clark <scarlett@scarlettgatelyclark.com>
 Build-Depends: debhelper (>= 9.0.0), cmake, pkg-kde-tools,
- extra-cmake-modules, qtbase5-dev, libqt5x11extras-dev, libkf5windowsystem-dev
+ extra-cmake-modules (>= 0.0.10), qtbase5-dev, libqt5x11extras-dev, libkf5windowsystem-dev (>= 4.96.0)
 Standards-Version: 3.9.5
 Homepage: https://projects.kde.org/projects/frameworks/knotifications
 
 Package: libkf5notifications-dev
 Section: libdevel
 Architecture: any
-Depends: libkf5notifications5 (= ${binary:Version}), ${misc:Depends}
+Depends: libkf5notifications4 (= ${binary:Version}), ${misc:Depends}
 Description: development files for knotifications
  KNotification is used to notify the user of an event.
  There are two main kinds of notifications:
@@ -28,7 +28,7 @@ Description: development files for knotifications
  .
  Contains development files for knotifications.
  
-Package: libkf5notifications5
+Package: libkf5notifications4
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -46,12 +46,12 @@ Description: KNotification is used to notify the user of an event.
  when the event actually occurs, and finishes when the message 
  is acknowledged or read.
 
-Package: libkf5notifications5-dbg
+Package: libkf5notifications4-dbg
 Priority: extra
 Section: debug
 Architecture: any
 Multi-Arch: same
-Depends: libkf5notifications5 (= ${binary:Version}), ${misc:Depends}
+Depends: libkf5notifications4 (= ${binary:Version}), ${misc:Depends}
 Description: debug symbols for knotifications
  KNotification is used to notify the user of an event.
  There are two main kinds of notifications:
