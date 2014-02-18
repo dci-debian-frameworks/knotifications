@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4.96.0 amd64
+# SymbolsHelper-Confirmed: 4.96.0 amd64 i386
 libKF5Notifications.so.4 libkf5notifications4 #MINVER#
  _ZN13KNotification10addContextERK5QPairI7QStringS1_E@Base 4.96.0
  _ZN13KNotification10addContextERK7QStringS2_@Base 4.96.0
@@ -63,14 +63,14 @@ libKF5Notifications.so.4 libkf5notifications4 #MINVER#
  _ZN13KPassivePopup7messageERK7QStringS2_P7QWidgetRK6QPoint@Base 4.96.0
  _ZN13KPassivePopup7messageERK7QStringS2_RK7QPixmapP15QSystemTrayIconi@Base 4.96.0
  _ZN13KPassivePopup7messageERK7QStringS2_RK7QPixmapP7QWidgetiRK6QPoint@Base 4.96.0
- _ZN13KPassivePopup7messageERK7QStringS2_RK7QPixmapyiRK6QPoint@Base 4.96.0
+ (subst)_ZN13KPassivePopup7messageERK7QStringS2_RK7QPixmap{quintptr}iRK6QPoint@Base 4.96.0
  _ZN13KPassivePopup7messageEiRK7QStringP15QSystemTrayIcon@Base 4.96.0
  _ZN13KPassivePopup7messageEiRK7QStringP7QWidgetRK6QPoint@Base 4.96.0
  _ZN13KPassivePopup7messageEiRK7QStringS2_P15QSystemTrayIcon@Base 4.96.0
  _ZN13KPassivePopup7messageEiRK7QStringS2_P7QWidgetRK6QPoint@Base 4.96.0
  _ZN13KPassivePopup7messageEiRK7QStringS2_RK7QPixmapP15QSystemTrayIconi@Base 4.96.0
  _ZN13KPassivePopup7messageEiRK7QStringS2_RK7QPixmapP7QWidgetiRK6QPoint@Base 4.96.0
- _ZN13KPassivePopup7messageEiRK7QStringS2_RK7QPixmapyiRK6QPoint@Base 4.96.0
+ (subst)_ZN13KPassivePopup7messageEiRK7QStringS2_RK7QPixmap{quintptr}iRK6QPoint@Base 4.96.0
  _ZN13KPassivePopup7setViewEP7QWidget@Base 4.96.0
  _ZN13KPassivePopup7setViewERK7QStringS2_@Base 4.96.0
  _ZN13KPassivePopup7setViewERK7QStringS2_RK7QPixmap@Base 4.96.0
@@ -78,9 +78,9 @@ libKF5Notifications.so.4 libkf5notifications4 #MINVER#
  _ZN13KPassivePopup9hideEventEP10QHideEvent@Base 4.96.0
  _ZN13KPassivePopup9setAnchorERK6QPoint@Base 4.96.0
  _ZN13KPassivePopupC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE@Base 4.96.0
- _ZN13KPassivePopupC1Ey@Base 4.96.0
+ (subst)_ZN13KPassivePopupC1E{quintptr}@Base 4.96.0
  _ZN13KPassivePopupC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE@Base 4.96.0
- _ZN13KPassivePopupC2Ey@Base 4.96.0
+ (subst)_ZN13KPassivePopupC2E{quintptr}@Base 4.96.0
  _ZN13KPassivePopupD0Ev@Base 4.96.0
  _ZN13KPassivePopupD1Ev@Base 4.96.0
  _ZN13KPassivePopupD2Ev@Base 4.96.0
