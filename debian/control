@@ -11,7 +11,7 @@ Homepage: https://projects.kde.org/projects/frameworks/knotifications
 Package: libkf5notifications-dev
 Section: libdevel
 Architecture: any
-Depends: libkf5notifications4 (= ${binary:Version}), ${misc:Depends}
+Depends: libkf5notifications5 (= ${binary:Version}), ${misc:Depends}
 Description: development files for knotifications
  KNotification is used to notify the user of an event.
  There are two main kinds of notifications:
@@ -28,7 +28,7 @@ Description: development files for knotifications
  .
  Contains development files for knotifications.
  
-Package: libkf5notifications4
+Package: libkf5notifications5
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -46,12 +46,12 @@ Description: KNotification is used to notify the user of an event.
  when the event actually occurs, and finishes when the message 
  is acknowledged or read.
 
-Package: libkf5notifications4-dbg
+Package: libkf5notifications5-dbg
 Priority: extra
 Section: debug
 Architecture: any
 Multi-Arch: same
-Depends: libkf5notifications4 (= ${binary:Version}), ${misc:Depends}
+Depends: libkf5notifications5 (= ${binary:Version}), ${misc:Depends}
 Description: debug symbols for knotifications
  KNotification is used to notify the user of an event.
  There are two main kinds of notifications:
