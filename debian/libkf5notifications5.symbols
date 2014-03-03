@@ -1,5 +1,5 @@
 # SymbolsHelper-Confirmed: 4.96.0 amd64 i386
-libKF5Notifications.so.4 libkf5notifications4 #MINVER#
+libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN13KNotification10addContextERK5QPairI7QStringS1_E@Base 4.96.0
  _ZN13KNotification10addContextERK7QStringS2_@Base 4.96.0
  _ZN13KNotification10setActionsERK11QStringList@Base 4.96.0
