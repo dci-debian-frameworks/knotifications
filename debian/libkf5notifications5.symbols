@@ -1,5 +1,6 @@
-# SymbolsHelper-Confirmed: 4.96.0 amd64 i386
+# SymbolsHelper-Confirmed: 4.97.0 amd64
 libKF5Notifications.so.5 libkf5notifications5 #MINVER#
+ _ZN12KNotifyImage7toImageEv@Base 4.97.0
  _ZN13KNotification10addContextERK5QPairI7QStringS1_E@Base 4.96.0
  _ZN13KNotification10addContextERK7QStringS2_@Base 4.96.0
  _ZN13KNotification10setActionsERK11QStringList@Base 4.96.0
@@ -8,13 +9,12 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN13KNotification11qt_metacastEPKc@Base 4.96.0
  _ZN13KNotification11raiseWidgetEv@Base 4.96.0
  _ZN13KNotification11setContextsERK5QListI5QPairI7QStringS2_EE@Base 4.96.0
- _ZN13KNotification14slotReceivedIdEi@Base 4.96.0
  _ZN13KNotification16action1ActivatedEv@Base 4.96.0
  _ZN13KNotification16action2ActivatedEv@Base 4.96.0
  _ZN13KNotification16action3ActivatedEv@Base 4.96.0
  _ZN13KNotification16setComponentNameERK7QString@Base 4.96.0
  _ZN13KNotification16staticMetaObjectE@Base 4.96.0
- _ZN13KNotification19slotReceivedIdErrorERK10QDBusError@Base 4.96.0
+ _ZN13KNotification2idEv@Base 4.97.0
  _ZN13KNotification3refEv@Base 4.96.0
  _ZN13KNotification4beepERK7QStringP7QWidget@Base 4.96.0
  _ZN13KNotification5closeEv@Base 4.96.0
@@ -43,6 +43,25 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN13KNotificationD0Ev@Base 4.96.0
  _ZN13KNotificationD1Ev@Base 4.96.0
  _ZN13KNotificationD2Ev@Base 4.96.0
+ _ZN13KNotifyConfig20reparseConfigurationEv@Base 4.97.0
+ _ZN13KNotifyConfig9readEntryERK7QStringb@Base 4.97.0
+ _ZN13KNotifyConfigC1ERK7QStringRK5QListI5QPairIS0_S0_EES2_@Base 4.97.0
+ _ZN13KNotifyConfigC2ERK7QStringRK5QListI5QPairIS0_S0_EES2_@Base 4.97.0
+ _ZN13KNotifyConfigD1Ev@Base 4.97.0
+ _ZN13KNotifyConfigD2Ev@Base 4.97.0
+ _ZN13KNotifyPlugin11qt_metacallEN11QMetaObject4CallEiPPv@Base 4.97.0
+ _ZN13KNotifyPlugin11qt_metacastEPKc@Base 4.97.0
+ _ZN13KNotifyPlugin13actionInvokedEii@Base 4.97.0
+ _ZN13KNotifyPlugin16staticMetaObjectE@Base 4.97.0
+ _ZN13KNotifyPlugin5closeEP13KNotification@Base 4.97.0
+ _ZN13KNotifyPlugin6finishEP13KNotification@Base 4.97.0
+ _ZN13KNotifyPlugin6updateEP13KNotificationP13KNotifyConfig@Base 4.97.0
+ _ZN13KNotifyPlugin8finishedEP13KNotification@Base 4.97.0
+ _ZN13KNotifyPluginC1EP7QObjectRK5QListI8QVariantE@Base 4.97.0
+ _ZN13KNotifyPluginC2EP7QObjectRK5QListI8QVariantE@Base 4.97.0
+ _ZN13KNotifyPluginD0Ev@Base 4.97.0
+ _ZN13KNotifyPluginD1Ev@Base 4.97.0
+ _ZN13KNotifyPluginD2Ev@Base 4.97.0
  _ZN13KPassivePopup10paintEventEP11QPaintEvent@Base 4.96.0
  _ZN13KPassivePopup10setTimeoutEi@Base 4.96.0
  _ZN13KPassivePopup10setVisibleEb@Base 4.96.0
@@ -140,8 +159,11 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZNK13KNotification6pixmapEv@Base 4.96.0
  _ZNK13KNotification6widgetEv@Base 4.96.0
  _ZNK13KNotification7actionsEv@Base 4.96.0
+ _ZNK13KNotification7appNameEv@Base 4.97.0
  _ZNK13KNotification7eventIdEv@Base 4.96.0
  _ZNK13KNotification8contextsEv@Base 4.96.0
+ _ZNK13KNotifyConfig4copyEv@Base 4.97.0
+ _ZNK13KNotifyPlugin10metaObjectEv@Base 4.97.0
  _ZNK13KPassivePopup10autoDeleteEv@Base 4.96.0
  _ZNK13KPassivePopup10metaObjectEv@Base 4.96.0
  _ZNK13KPassivePopup15defaultLocationEv@Base 4.96.0
@@ -170,14 +192,17 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZNK19KStatusNotifierItem8iconNameEv@Base 4.96.0
  _ZNK25KNotificationRestrictions10metaObjectEv@Base 4.96.0
  _ZTI13KNotification@Base 4.96.0
+ _ZTI13KNotifyPlugin@Base 4.97.0
  _ZTI13KPassivePopup@Base 4.96.0
  _ZTI19KStatusNotifierItem@Base 4.96.0
  _ZTI25KNotificationRestrictions@Base 4.96.0
  _ZTS13KNotification@Base 4.96.0
+ _ZTS13KNotifyPlugin@Base 4.97.0
  _ZTS13KPassivePopup@Base 4.96.0
  _ZTS19KStatusNotifierItem@Base 4.96.0
  _ZTS25KNotificationRestrictions@Base 4.96.0
  _ZTV13KNotification@Base 4.96.0
+ _ZTV13KNotifyPlugin@Base 4.97.0
  _ZTV13KPassivePopup@Base 4.96.0
  _ZTV19KStatusNotifierItem@Base 4.96.0
  _ZTV25KNotificationRestrictions@Base 4.96.0
