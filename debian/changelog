@@ -1,4 +1,4 @@
-knotifications (4.97.0a-0ubuntu1) UNRELEASED; urgency=medium
+knotifications (4.97.0-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Jonathan Riddell ]
   * New upstream alpha release
@@ -6,6 +6,7 @@ knotifications (4.97.0a-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Scarlett Clark ]
   * Fix depends, patch symbols. 
+  * Add optional depends 
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 03 Mar 2014 12:23:34 +0000
 
