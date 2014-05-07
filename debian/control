@@ -12,7 +12,8 @@ Build-Depends: debhelper (>= 9.0.0), cmake, pkg-kde-tools,
  libkf5auth-dev (>= 4.99.0), libkf5guiaddons-dev (>= 4.99.0),
  libkf5widgetsaddons-dev (>= 4.99.0), libkf5itemviews-dev (>= 4.99.0),
  libkf5codecs-dev (>= 4.99.0), libphonon4qt5-dev, pkg-config,
- libphonon4qt5experimental-dev, libdbusmenu-qt5-dev
+ libphonon4qt5experimental-dev, libdbusmenu-qt5-dev,
+ qttools5-dev, qttools5-dev-tools, qt5-default
 Standards-Version: 3.9.5
 Homepage: https://projects.kde.org/projects/frameworks/knotifications
 
@@ -20,39 +21,31 @@ Package: libkf5notifications-dev
 Section: libdevel
 Architecture: any
 Depends: libkf5notifications5 (= ${binary:Version}), ${misc:Depends}
-Description: development files for knotifications
- KNotification is used to notify the user of an event.
- There are two main kinds of notifications:
- Feedback events: For notifying the user that he/she just
- performed an operation, like maximizing a window. This 
- allows us to play sounds when a dialog appears. This is
- an instant notification. It ends automatically after a small 
- timeout.
- persistent notifications: Notify when the user received a new
- message, or when something else important happened the user has
- to know about. This notification has a start and a end. It begins
- when the event actually occurs, and finishes when the message 
- is acknowledged or read.
+Description: a framework for desktop notifications
+ KNotification is used to notify the user of an event. It covers
+ feedback and persistent events.
  .
- Contains development files for knotifications.
+ Contains debug symbols for KNotifications.
  
 Package: libkf5notifications5
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: KNotification is used to notify the user of an event.
- There are two main kinds of notifications:
- Feedback events: For notifying the user that he/she just
- performed an operation, like maximizing a window. This 
- allows us to play sounds when a dialog appears. This is
- an instant notification. It ends automatically after a small 
- timeout.
- persistent notifications: Notify when the user received a new
- message, or when something else important happened the user has
- to know about. This notification has a start and a end. It begins
- when the event actually occurs, and finishes when the message 
- is acknowledged or read.
+Description: a framework for desktop notifications
+ KNotification is used to notify the user of an event. It covers
+ feedback and persistent events.
+
+Package: libkf5notifications5-data
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a framework for desktop notifications
+ KNotification is used to notify the user of an event. It covers
+ feedback and persistent events.
+ .
+ This package contains the translations.
 
 Package: libkf5notifications5-dbg
 Priority: extra
@@ -60,19 +53,9 @@ Section: debug
 Architecture: any
 Multi-Arch: same
 Depends: libkf5notifications5 (= ${binary:Version}), ${misc:Depends}
-Description: debug symbols for knotifications
- KNotification is used to notify the user of an event.
- There are two main kinds of notifications:
- Feedback events: For notifying the user that he/she just
- performed an operation, like maximizing a window. This 
- allows us to play sounds when a dialog appears. This is
- an instant notification. It ends automatically after a small 
- timeout.
- persistent notifications: Notify when the user received a new
- message, or when something else important happened the user has
- to know about. This notification has a start and a end. It begins
- when the event actually occurs, and finishes when the message 
- is acknowledged or read.
+Description: a framework for desktop notifications
+ KNotification is used to notify the user of an event. It covers
+ feedback and persistent events.
  .
- Contains debug symbols for knotifications.
+ Contains debug symbols for KNotifications.
  
