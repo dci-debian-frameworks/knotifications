@@ -1,6 +1,6 @@
 usr/include/KF5/
 usr/lib/*/cmake/KF5Notifications/
 usr/lib/*/libKF5Notifications.so
+usr/lib/*/qt5/mkspecs/modules/*
 usr/share/dbus-1/interfaces/kf5_org.kde.StatusNotifierItem.xml
 usr/share/dbus-1/interfaces/kf5_org.kde.StatusNotifierWatcher.xml
-usr/lib/*/qt5/mkspecs/modules/*

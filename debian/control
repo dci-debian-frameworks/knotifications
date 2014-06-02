@@ -5,21 +5,21 @@ Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Scarlett Clark <scarlett@scarlettgatelyclark.com>
 Build-Depends: cmake,
                debhelper (>= 9.0.0),
-               extra-cmake-modules (>= 0.0.13),
+               extra-cmake-modules (>= 0.0.14),
                libdbusmenu-qt5-dev,
-               libkf5auth-dev (>= 4.99.0),
-               libkf5codecs-dev (>= 4.99.0),
-               libkf5config-dev (>= 4.99.0),
-               libkf5configwidgets-dev (>= 4.99.0),
-               libkf5coreaddons-dev (>= 4.99.0),
-               libkf5dbusaddons-dev (>= 4.99.0),
-               libkf5guiaddons-dev (>= 4.99.0),
-               libkf5i18n-dev (>= 4.99.0),
-               libkf5iconthemes-dev (>= 4.99.0),
-               libkf5itemviews-dev (>= 4.99.0),
-               libkf5service-dev (>= 4.99.0),
-               libkf5widgetsaddons-dev (>= 4.99.0),
-               libkf5windowsystem-dev (>= 4.99.0),
+               libkf5auth-dev (>= 4.100.0),
+               libkf5codecs-dev (>= 4.100.0),
+               libkf5config-dev (>= 4.100.0),
+               libkf5configwidgets-dev (>= 4.100.0),
+               libkf5coreaddons-dev (>= 4.100.0),
+               libkf5dbusaddons-dev (>= 4.100.0),
+               libkf5guiaddons-dev (>= 4.100.0),
+               libkf5i18n-dev (>= 4.100.0),
+               libkf5iconthemes-dev (>= 4.100.0),
+               libkf5itemviews-dev (>= 4.100.0),
+               libkf5service-dev (>= 4.100.0),
+               libkf5widgetsaddons-dev (>= 4.100.0),
+               libkf5windowsystem-dev (>= 4.100.0),
                libphonon4qt5-dev,
                libphonon4qt5experimental-dev,
                libqt5x11extras5-dev,
@@ -35,9 +35,10 @@ Homepage: https://projects.kde.org/projects/frameworks/knotifications
 Package: libkf5notifications-dev
 Section: libdevel
 Architecture: any
-Depends: libkf5notifications5 (= ${binary:Version}), ${misc:Depends},
- libkf5windowsystem-dev,
- qtbase5-dev
+Depends: libkf5notifications5 (= ${binary:Version}),
+         libkf5windowsystem-dev,
+         qtbase5-dev,
+         ${misc:Depends}
 Description: a framework for desktop notifications
  KNotification is used to notify the user of an event. It covers
  feedback and persistent events.
@@ -47,7 +48,9 @@ Description: a framework for desktop notifications
 Package: libkf5notifications5
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, libkf5notifications5-data (= ${source:Version})
+Depends: libkf5notifications5-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: a framework for desktop notifications
  KNotification is used to notify the user of an event. It covers
  feedback and persistent events.
