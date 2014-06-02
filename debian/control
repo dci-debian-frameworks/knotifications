@@ -32,6 +32,16 @@ Build-Depends: cmake,
 Standards-Version: 3.9.5
 Homepage: https://projects.kde.org/projects/frameworks/knotifications
 
+Package: libkf5notifications-dev
+Section: libdevel
+Architecture: any
+Depends: libkf5notifications5 (= ${binary:Version}), ${misc:Depends}
+Description: a framework for desktop notifications
+ KNotification is used to notify the user of an event. It covers
+ feedback and persistent events.
+ .
+ Contains debug symbols for KNotifications.
+
 Package: libkf5notifications5
 Section: libdevel
 Architecture: any
