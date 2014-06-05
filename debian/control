@@ -46,7 +46,6 @@ Description: Framework for desktop notifications
  Contains debug symbols for KNotifications.
 
 Package: libkf5notifications5
-Section: libdevel
 Architecture: any
 Depends: libkf5notifications5-data (= ${source:Version}),
          ${misc:Depends},
