@@ -47,7 +47,7 @@ Description: Framework for desktop notifications
 
 Package: libkf5notifications5
 Architecture: any
-Depends: libkf5notifications5-data (= ${source:Version}),
+Depends: libkf5notifications-data (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Framework for desktop notifications
@@ -55,7 +55,7 @@ Description: Framework for desktop notifications
  feedback and persistent events.
 Multi-Arch: same
 
-Package: libkf5notifications5-data
+Package: libkf5notifications-data
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
