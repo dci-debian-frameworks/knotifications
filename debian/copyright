@@ -3,6 +3,7 @@ Upstream-Name: knotifications
 Source: https://projects.kde.org/projects/frameworks/knotifications
 
 Files: *
+       debian/*
 Copyright: © 2009 Marco Martin <notmart@gmail.com>
            © 2005-2006 Olivier Goffart <ogoffart@kde.org>
            © 2006 Aaron Seigo <aseigo@kde.org>
@@ -20,6 +21,7 @@ Copyright: © 2009 Marco Martin <notmart@gmail.com>
            © 2006 Michael Larouche <michael.larouche@kdemail.net>
            © 2006 Thiago Macieira <thiago@kde.org>
            © 2000 Waldo Bastian <bastian@kde.org>
+             2014 Scarlett Clark <scarlett@scarlettgatelyclark.com>
 License: LGPL-2+
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Library General Public
@@ -89,22 +91,3 @@ License: BSD
  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-Files: debian/*
-Copyright: 2014 Scarlett Clark <scarlett@scarlettgatelyclark.com>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
- .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
- .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>
- .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
