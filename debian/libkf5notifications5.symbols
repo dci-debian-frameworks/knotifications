@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.3.0+git20141030.0311 amd64 i386
+# SymbolsHelper-Confirmed: 5.3.0+git20141106.1401 amd64 i386
 libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN12KNotifyImage7toImageEv@Base 4.97.0
  _ZN13KNotification10addContextERK5QPairI7QStringS1_E@Base 4.96.0
@@ -51,19 +51,6 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN13KNotifyConfigC2ERK7QStringRK5QListI5QPairIS0_S0_EES2_@Base 4.97.0
  _ZN13KNotifyConfigD1Ev@Base 4.97.0
  _ZN13KNotifyConfigD2Ev@Base 4.97.0
- _ZN13KNotifyPlugin11qt_metacallEN11QMetaObject4CallEiPPv@Base 4.97.0
- _ZN13KNotifyPlugin11qt_metacastEPKc@Base 4.97.0
- _ZN13KNotifyPlugin13actionInvokedEii@Base 4.97.0
- _ZN13KNotifyPlugin16staticMetaObjectE@Base 4.97.0
- _ZN13KNotifyPlugin5closeEP13KNotification@Base 4.97.0
- _ZN13KNotifyPlugin6finishEP13KNotification@Base 4.97.0
- _ZN13KNotifyPlugin6updateEP13KNotificationP13KNotifyConfig@Base 4.97.0
- _ZN13KNotifyPlugin8finishedEP13KNotification@Base 4.97.0
- _ZN13KNotifyPluginC1EP7QObjectRK5QListI8QVariantE@Base 4.97.0
- _ZN13KNotifyPluginC2EP7QObjectRK5QListI8QVariantE@Base 4.97.0
- _ZN13KNotifyPluginD0Ev@Base 4.97.0
- _ZN13KNotifyPluginD1Ev@Base 4.97.0
- _ZN13KNotifyPluginD2Ev@Base 4.97.0
  _ZN13KPassivePopup10paintEventEP11QPaintEvent@Base 4.96.0
  _ZN13KPassivePopup10setTimeoutEi@Base 4.96.0
  _ZN13KPassivePopup10setVisibleEb@Base 4.96.0
@@ -105,6 +92,19 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN13KPassivePopupD0Ev@Base 4.96.0
  _ZN13KPassivePopupD1Ev@Base 4.96.0
  _ZN13KPassivePopupD2Ev@Base 4.96.0
+ _ZN19KNotificationPlugin11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPlugin11qt_metacastEPKc@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPlugin13actionInvokedEii@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPlugin16staticMetaObjectE@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPlugin5closeEP13KNotification@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPlugin6finishEP13KNotification@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPlugin6updateEP13KNotificationP13KNotifyConfig@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPlugin8finishedEP13KNotification@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPluginC1EP7QObjectRK5QListI8QVariantE@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPluginC2EP7QObjectRK5QListI8QVariantE@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPluginD0Ev@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPluginD1Ev@Base 5.3.0+git20141106.1401
+ _ZN19KNotificationPluginD2Ev@Base 5.3.0+git20141106.1401
  _ZN19KStatusNotifierItem10setToolTipERK5QIconRK7QStringS5_@Base 4.96.0
  _ZN19KStatusNotifierItem10setToolTipERK7QStringS2_S2_@Base 4.96.0
  _ZN19KStatusNotifierItem11eventFilterEP7QObjectP6QEvent@Base 4.96.0
@@ -167,13 +167,13 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZNK13KNotification8contextsEv@Base 4.96.0
  _ZNK13KNotification8iconNameEv@Base 5.3.0+git20141030.0311
  _ZNK13KNotifyConfig4copyEv@Base 4.97.0
- _ZNK13KNotifyPlugin10metaObjectEv@Base 4.97.0
  _ZNK13KPassivePopup10autoDeleteEv@Base 4.96.0
  _ZNK13KPassivePopup10metaObjectEv@Base 4.96.0
  _ZNK13KPassivePopup15defaultLocationEv@Base 4.96.0
  _ZNK13KPassivePopup4viewEv@Base 4.96.0
  _ZNK13KPassivePopup6anchorEv@Base 4.96.0
  _ZNK13KPassivePopup7timeoutEv@Base 4.96.0
+ _ZNK19KNotificationPlugin10metaObjectEv@Base 5.3.0+git20141106.1401
  _ZNK19KStatusNotifierItem10iconPixmapEv@Base 4.96.0
  _ZNK19KStatusNotifierItem10metaObjectEv@Base 4.96.0
  _ZNK19KStatusNotifierItem11contextMenuEv@Base 4.96.0
@@ -196,18 +196,18 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZNK19KStatusNotifierItem8iconNameEv@Base 4.96.0
  _ZNK25KNotificationRestrictions10metaObjectEv@Base 4.96.0
  _ZTI13KNotification@Base 4.96.0
- _ZTI13KNotifyPlugin@Base 4.97.0
  _ZTI13KPassivePopup@Base 4.96.0
+ _ZTI19KNotificationPlugin@Base 5.3.0+git20141106.1401
  _ZTI19KStatusNotifierItem@Base 4.96.0
  _ZTI25KNotificationRestrictions@Base 4.96.0
  _ZTS13KNotification@Base 4.96.0
- _ZTS13KNotifyPlugin@Base 4.97.0
  _ZTS13KPassivePopup@Base 4.96.0
+ _ZTS19KNotificationPlugin@Base 5.3.0+git20141106.1401
  _ZTS19KStatusNotifierItem@Base 4.96.0
  _ZTS25KNotificationRestrictions@Base 4.96.0
  _ZTV13KNotification@Base 4.96.0
- _ZTV13KNotifyPlugin@Base 4.97.0
  _ZTV13KPassivePopup@Base 4.96.0
+ _ZTV19KNotificationPlugin@Base 5.3.0+git20141106.1401
  _ZTV19KStatusNotifierItem@Base 4.96.0
  _ZTV25KNotificationRestrictions@Base 4.96.0
  (c++)"non-virtual thunk to KPassivePopup::~KPassivePopup()@Base" 4.96.0
