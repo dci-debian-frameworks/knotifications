@@ -1,8 +1,8 @@
-knotifications (5.5.0-0ubuntu1) UNRELEASED; urgency=medium
+knotifications (5.5.0-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
 
- -- Scarlett Clark <sgclark@kubuntu.org>  Thu, 11 Dec 2014 14:10:16 -0800
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 15 Dec 2014 11:14:54 +0100
 
 knotifications (5.4.0-0ubuntu1) vivid; urgency=medium
 
