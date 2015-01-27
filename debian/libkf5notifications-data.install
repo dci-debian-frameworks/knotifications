@@ -1,2 +1,2 @@
 usr/share/kservicetypes5/knotificationplugin.desktop
-usr/share/locale
+usr/share/locale/*/*/knotifications5_qt.qm
