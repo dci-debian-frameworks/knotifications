@@ -4,28 +4,21 @@ Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Maximiliano Curia <maxy@debian.org>
 Build-Depends: cmake,
-               debhelper (>= 9.0.0),
+               debhelper (>= 9),
                extra-cmake-modules (>= 1.6.0),
                libdbusmenu-qt5-dev,
-               libkf5auth-dev (>= 5.6.0),
                libkf5codecs-dev (>= 5.6.0),
                libkf5config-dev (>= 5.6.0),
-               libkf5configwidgets-dev (>= 5.6.0),
                libkf5coreaddons-dev (>= 5.6.0),
-               libkf5dbusaddons-dev (>= 5.6.0),
-               libkf5guiaddons-dev (>= 5.6.0),
-               libkf5i18n-dev (>= 5.6.0),
                libkf5iconthemes-dev (>= 5.6.0),
-               libkf5itemviews-dev (>= 5.6.0),
                libkf5service-dev (>= 5.6.0),
-               libkf5widgetsaddons-dev (>= 5.6.0),
                libkf5windowsystem-dev (>= 5.6.0),
                libphonon4qt5-dev,
                libphonon4qt5experimental-dev,
-               libqt5x11extras5-dev,
+               libqt5x11extras5-dev (>= 5.2.0),
                pkg-config,
                pkg-kde-tools (>= 0.15.15ubuntu1~),
-               qtbase5-dev,
+               qtbase5-dev (>= 5.2.0),
                qttools5-dev,
                qttools5-dev-tools
 Standards-Version: 3.9.5
@@ -37,8 +30,8 @@ Package: libkf5notifications-dev
 Section: libdevel
 Architecture: any
 Depends: libkf5notifications5 (= ${binary:Version}),
-         libkf5windowsystem-dev,
-         qtbase5-dev,
+         libkf5windowsystem-dev (>= 5.6.0),
+         qtbase5-dev (>= 5.2.0),
          ${misc:Depends}
 Description: Framework for desktop notifications
  KNotification is used to notify the user of an event. It covers
