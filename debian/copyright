@@ -3,83 +3,37 @@ Upstream-Name: knotifications
 Source: https://projects.kde.org/projects/frameworks/knotifications
 
 Files: *
-       debian/*
-Copyright: 2009 Marco Martin <notmart@gmail.com>
-           2005-2006 Olivier Goffart <ogoffart@kde.org>
-           2006 Aaron Seigo <aseigo@kde.org>
-           2004-2005 Sascha Cunz <sascha.cunz@tiscali.de>
-           2001-2006 Richard Moore <rich@kde.org>
-           1997 Christian Esken <esken@kde.org>
-           2006 Aaron J. Seigo <aseigo@kde.org>
-           2013 Aurélien Gâteau <aurelien.gateau@canonical.com>
-           2005 Allan Sandfeld Jensen <kde@carewolf.com>
-           2000 Stefan Schimanski <1stein@gmx.de>
-           2000-2003 Carsten Pfeiffer <pfeiffer@kde.org>
-           2009 Canonical Ltd.
-           2000 Matthias Ettrich <ettrich@kde.org>
-           2000 Charles Samuels <charles@kde.org>
-           2006 Michael Larouche <michael.larouche@kdemail.net>
-           2006 Thiago Macieira <thiago@kde.org>
-           2000 Waldo Bastian <bastian@kde.org>
-           2014 Scarlett Clark <scarlett@scarlettgatelyclark.com>
+Copyright: 2006, Aaron J. Seigo <aseigo@kde.org>
+           2009, Marco Martin <notmart@gmail.com>
+           2014, Martin Klapetek <mklapetek@kde.org>
+           2001-2006, Richard Moore <rich@kde.org>
+           2004-2005, Sascha Cunz <sascha.cunz@tiscali.de>
 License: LGPL-2+
- This library is free software; you can redistribute it and/or
- modify it under the terms of the GNU Library General Public
- License as published by the Free Software Foundation; either
- version 2 of the License, or (at your option) any later version.
- .
- This library is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- Library General Public License for more details.
- .
- You should have received a copy of the GNU Library General Public License
- along with this library; see the file COPYING.LIB.  If not, write to
- the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- Boston, MA 02110-1301, USA.
- .
- On Debian systems, the complete text of the GNU Library General
- Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
 
-Files: src/knotifyconfig.h
-       src/imageconverter.h
-       src/notifybytaskbar.h
-       src/notifybypopup.h
-       src/notifybyaudio.h
-       src/knotifyplugin.cpp
-       src/notifybypopupgrowl.cpp
-       src/notifybyktts.cpp
-       src/notifybyexecute.h
-       src/imageconverter.cpp
-       src/notifybytaskbar.cpp
+Files: src/knotificationplugin.cpp
+       src/knotificationplugin.h
        src/knotifyconfig.cpp
-       src/knotifyplugin.h
-       src/Messages.sh
-       src/notifybyktts.h
-       src/notifybyexecute.cpp
-       src/notifybypopup.cpp
-       src/notifybylogfile.h
+       src/knotifyconfig.h
        src/notifybyaudio.cpp
-       src/notifybypopupgrowl.h
+       src/notifybyaudio.h
+       src/notifybyexecute.cpp
+       src/notifybyexecute.h
+       src/notifybyktts.cpp
+       src/notifybyktts.h
        src/notifybylogfile.cpp
-Copyright: 2009 Marco Martin <notmart@gmail.com>
-           2005-2006 Olivier Goffart <ogoffart@kde.org>
-           2006 Aaron Seigo <aseigo@kde.org>
-           2004-2005 Sascha Cunz <sascha.cunz@tiscali.de>
-           2001-2006 Richard Moore <rich@kde.org>
-           1997 Christian Esken <esken@kde.org>
-           2006 Aaron J. Seigo <aseigo@kde.org>
-           Aurélien Gâteau <aurelien.gateau@canonical.com>
-           2005 Allan Sandfeld Jensen <kde@carewolf.com>
-           2000 Stefan Schimanski <1stein@gmx.de>
-           2000-2003 Carsten Pfeiffer <pfeiffer@kde.org>
-           2009 Canonical Ltd.
-           2000 Matthias Ettrich <ettrich@kde.org>
-           2000 Charles Samuels <charles@kde.org>
-           2006 Michael Larouche <michael.larouche@kdemail.net>
-           2006 Thiago Macieira <thiago@kde.org>
-           2000 Waldo Bastian <bastian@kde.org>
-License: LGPL-KDEeV
+       src/notifybylogfile.h
+       src/notifybypopup.cpp
+       src/notifybypopup.h
+       src/notifybypopupgrowl.cpp
+       src/notifybypopupgrowl.h
+       src/notifybytaskbar.cpp
+       src/notifybytaskbar.h
+Copyright: 2008, Dmitry Suzdalev <dimsuz@gmail.com>
+           2009, Laurent Montel <montel@kde.org>
+           2014, Martin Klapetek <mklapetek@kde.org>
+           2005-2009, Olivier Goffart <ogoffart@kde.org>
+           2010, Sjors Gielen <dazjorz@dazjorz.com>
+License: LGPL-2.1+3+KDEeV
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Lesser General Public
  License as published by the Free Software Foundation; either
@@ -96,19 +50,67 @@ License: LGPL-KDEeV
  You should have received a copy of the GNU Lesser General Public
  License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  .
- On Debian systems, the complete text of the GNU Library General
- Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ version 2.1 can be found in "/usr/share/common-licenses/LGPL-2.1", likewise,
+ the complete text of the GNU Lesser General Public License version 3 can be
+ found in "/usr/share/common-licenses/LGPL-3".
 
 Files: src/knotification.cpp
        src/knotification.h
        src/knotificationmanager.cpp
        src/knotificationmanager_p.h
-Copyright: 2005-2006 Olivier Goffart <ogoffart at kde.org>
-           2006 Thiago Macieira <thiago@kde.org>
+Copyright: 1997, Christian Esken <esken@kde.org>
+           2013-2014, Martin Klapetek <mklapetek@kde.org>
+           2005-2006, Olivier Goffart <ogoffart@kde.org>
+           2006, Thiago Macieira <thiago@kde.org>
 License: LGPL-2
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Library General Public
  License version 2 as published by the Free Software Foundation.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public License
+ along with this library; see the file COPYING.LIB.  If not, write to
+ the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+Files: src/imageconverter.cpp
+       src/imageconverter.h
+Copyright: 2009, Canonical
+License: LGPL-2 or LGPL-3
+ This program is free software: you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License as published by
+ the Free Software Foundation, either version 2 or 3 of the License.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Library General Public
+ License version 2 can be found in "/usr/share/common-licenses/LGPL-2",
+ likewise, the complete text of the GNU Lesser General Public License version
+ 3 can be found in "/usr/share/common-licenses/LGPL-3".
+
+Files: debian/*
+Copyright: 2014 Scarlett Clark <scarlett@scarlettgatelyclark.com>
+License: LGPL-2+
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
  .
  This library is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
