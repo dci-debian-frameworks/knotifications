@@ -1,4 +1,4 @@
-knotifications (5.6.0-1~) UNRELEASED; urgency=medium
+knotifications (5.6.0-1) experimental; urgency=medium
 
   * Prepare initial Debian release.
   * Update build dependencies to build against experimental and to
@@ -10,7 +10,7 @@ knotifications (5.6.0-1~) UNRELEASED; urgency=medium
   * Update watch file.
   * Add missing dev dependency (thanks to acc headers check)
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 27 Jan 2015 16:34:27 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 27 Jan 2015 22:05:57 +0100
 
 knotifications (5.6.0-0ubuntu1) vivid; urgency=medium
 
