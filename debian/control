@@ -30,7 +30,8 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/frameworks/knotifications.git
 Package: libkf5notifications-dev
 Section: libdevel
 Architecture: any
-Depends: libkf5coreaddons-dev (>= 5.7.0),
+Depends: libkf5config-dev (>= 5.7.0),
+         libkf5coreaddons-dev (>= 5.7.0),
          libkf5notifications5 (= ${binary:Version}),
          libkf5windowsystem-dev (>= 5.7.0),
          qtbase5-dev (>= 5.2.0),
