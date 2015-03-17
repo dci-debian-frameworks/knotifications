@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.3.0+git20141106.1401 amd64 i386
+# SymbolsHelper-Confirmed: 5.8.0+git20150317.0114+15.04 amd64 i386
 libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN12KNotifyImage7toImageEv@Base 4.97.0
  _ZN13KNotification10addContextERK5QPairI7QStringS1_E@Base 4.96.0
@@ -15,13 +15,17 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN13KNotification16action3ActivatedEv@Base 4.96.0
  _ZN13KNotification16setComponentNameERK7QString@Base 4.96.0
  _ZN13KNotification16staticMetaObjectE@Base 4.96.0
+ _ZN13KNotification22standardEventToEventIdENS_13StandardEventE@Base 5.8.0+git20150317.0114+15.04
+ _ZN13KNotification23standardEventToIconNameENS_13StandardEventE@Base 5.8.0+git20150317.0114+15.04
  _ZN13KNotification2idEv@Base 4.97.0
  _ZN13KNotification3refEv@Base 4.96.0
  _ZN13KNotification4beepERK7QStringP7QWidget@Base 4.96.0
  _ZN13KNotification5closeEv@Base 4.96.0
  _ZN13KNotification5derefEv@Base 4.96.0
  _ZN13KNotification5eventENS_13StandardEventERK7QStringRK7QPixmapP7QWidgetRK6QFlagsINS_16NotificationFlagEE@Base 4.96.0
+ _ZN13KNotification5eventENS_13StandardEventERK7QStringS3_P7QWidgetRK6QFlagsINS_16NotificationFlagEE@Base 5.8.0+git20150317.0114+15.04
  _ZN13KNotification5eventENS_13StandardEventERK7QStringS3_RK7QPixmapP7QWidgetRK6QFlagsINS_16NotificationFlagEE@Base 4.96.0
+ _ZN13KNotification5eventENS_13StandardEventERK7QStringS3_S3_P7QWidgetRK6QFlagsINS_16NotificationFlagEE@Base 5.8.0+git20150317.0114+15.04
  _ZN13KNotification5eventERK7QStringS2_RK7QPixmapP7QWidgetRK6QFlagsINS_16NotificationFlagEES2_@Base 4.96.0
  _ZN13KNotification5eventERK7QStringS2_S2_RK7QPixmapP7QWidgetRK6QFlagsINS_16NotificationFlagEES2_@Base 4.96.0
  _ZN13KNotification5eventERK7QStringS2_S2_S2_P7QWidgetRK6QFlagsINS_16NotificationFlagEES2_@Base 5.3.0+git20141030.0311
