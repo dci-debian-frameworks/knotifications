@@ -15,12 +15,12 @@ Build-Depends: cmake (>= 2.8.12~),
                libkf5windowsystem-dev (>= 5.10.0~),
                libphonon4qt5-dev (>= 4.6.60~),
                libphonon4qt5experimental-dev,
-               libqt5x11extras5-dev (>= 5.2.0),
+               libqt5x11extras5-dev (>= 5.4),
                pkg-config,
                pkg-kde-tools (>= 0.15.15ubuntu1~),
-               qtbase5-dev (>= 5.2.0),
-               qttools5-dev,
-               qttools5-dev-tools
+               qtbase5-dev (>= 5.4),
+               qttools5-dev (>= 5.4),
+               qttools5-dev-tools (>= 5.4)
 Standards-Version: 3.9.6
 XS-Testsuite: autopkgtest
 Homepage: https://projects.kde.org/projects/frameworks/knotifications
@@ -34,7 +34,7 @@ Depends: libkf5config-dev (>= 5.10.0~),
          libkf5coreaddons-dev (>= 5.10.0~),
          libkf5notifications5 (= ${binary:Version}),
          libkf5windowsystem-dev (>= 5.10.0~),
-         qtbase5-dev (>= 5.2.0),
+         qtbase5-dev (>= 5.4),
          ${misc:Depends}
 Description: Framework for desktop notifications
  KNotification is used to notify the user of an event. It covers
