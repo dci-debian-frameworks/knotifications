@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.10.0 amd64
+# SymbolsHelper-Confirmed: 5.12.0 amd64
 libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN12KNotifyImage7toImageEv@Base 4.97.0
  _ZN13KNotification10addContextERK5QPairI7QStringS1_E@Base 4.96.0
@@ -195,6 +195,7 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZNK19KStatusNotifierItem22standardActionsEnabledEv@Base 4.96.0
  _ZNK19KStatusNotifierItem2idEv@Base 4.96.0
  _ZNK19KStatusNotifierItem5titleEv@Base 4.96.0
+ _ZNK19KStatusNotifierItem6actionERK7QString@Base 5.12.0
  _ZNK19KStatusNotifierItem6statusEv@Base 4.96.0
  _ZNK19KStatusNotifierItem8categoryEv@Base 4.96.0
  _ZNK19KStatusNotifierItem8iconNameEv@Base 4.96.0
