@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.12.0 amd64
+# SymbolsHelper-Confirmed: 5.14.0 mips mipsel powerpc
 libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN12KNotifyImage7toImageEv@Base 4.97.0
  _ZN13KNotification10addContextERK5QPairI7QStringS1_E@Base 4.96.0
@@ -158,7 +158,6 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN25KNotificationRestrictionsD0Ev@Base 4.96.0
  _ZN25KNotificationRestrictionsD1Ev@Base 4.96.0
  _ZN25KNotificationRestrictionsD2Ev@Base 4.96.0
- (optional=gccinternal|arch=mips mipsel powerpc)_ZN8QPolygon8setPointEiRK6QPoint@Base 5.9.0
  _ZNK13KNotification10metaObjectEv@Base 4.96.0
  _ZNK13KNotification4textEv@Base 4.96.0
  _ZNK13KNotification5flagsEv@Base 4.96.0
