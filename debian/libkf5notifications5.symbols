@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.14.0+git20150929.0119+15.10 amd64 i386
+# SymbolsHelper-Confirmed: 5.15.0 amd64
 libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN12KNotifyImage7toImageEv@Base 4.97.0
  _ZN13KNotification10addContextERK5QPairI7QStringS1_E@Base 4.96.0
@@ -50,7 +50,7 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN13KNotificationD1Ev@Base 4.96.0
  _ZN13KNotificationD2Ev@Base 4.96.0
  _ZN13KNotifyConfig20reparseConfigurationEv@Base 4.97.0
- _ZN13KNotifyConfig26reparseSingleConfigurationERK7QString@Base 5.14.0+git20150929.0119+15.10
+ _ZN13KNotifyConfig26reparseSingleConfigurationERK7QString@Base 5.15.0
  _ZN13KNotifyConfig9readEntryERK7QStringb@Base 4.97.0
  _ZN13KNotifyConfigC1ERK7QStringRK5QListI5QPairIS0_S0_EES2_@Base 4.97.0
  _ZN13KNotifyConfigC2ERK7QStringRK5QListI5QPairIS0_S0_EES2_@Base 4.97.0
@@ -159,7 +159,6 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN25KNotificationRestrictionsD0Ev@Base 4.96.0
  _ZN25KNotificationRestrictionsD1Ev@Base 4.96.0
  _ZN25KNotificationRestrictionsD2Ev@Base 4.96.0
- (optional=gccinternal|arch=mips mipsel powerpc)_ZN8QPolygon8setPointEiRK6QPoint@Base 5.9.0
  _ZNK13KNotification10metaObjectEv@Base 4.96.0
  _ZNK13KNotification4textEv@Base 4.96.0
  _ZNK13KNotification5flagsEv@Base 4.96.0
