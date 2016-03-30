@@ -1,6 +1,6 @@
-knotifications (5.20.0-1~2.gbp558499) UNRELEASED; urgency=medium
+knotifications (5.20.0-1~3.gbpc99a25) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @5584992b9bc3182f377ed404f17b4f4983247d8d **
+  ** SNAPSHOT build @c99a2534779e56a057ee9286b3f047c2a430d4f3 **
 
   [ Maximiliano Curia ]
   * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
@@ -13,8 +13,9 @@ knotifications (5.20.0-1~2.gbp558499) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * UNRELEASED
+  * UNRELEASED
 
- -- Maximiliano Curia <jenkins@amadeus.gnuservers.com.ar>  Tue, 29 Mar 2016 23:21:04 +0200
+ -- Maximiliano Curia <jenkins@amadeus.gnuservers.com.ar>  Wed, 30 Mar 2016 10:14:50 +0200
 
 knotifications (5.19.0-1) experimental; urgency=medium
 
