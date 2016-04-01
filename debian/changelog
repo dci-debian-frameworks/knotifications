@@ -1,3 +1,23 @@
+knotifications (5.20.0-1~4.gbp5ef034) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @5ef0348d881002f95d4fea2b670a75995fb52581 **
+
+  [ Maximiliano Curia ]
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * UNRELEASED
+  * UNRELEASED
+  * UNRELEASED
+
+ -- Maximiliano Curia <jenkins@amadeus.gnuservers.com.ar>  Wed, 30 Mar 2016 12:03:46 +0200
+
 knotifications (5.19.0-1) experimental; urgency=medium
 
   * New upstream release (5.19.0).
