@@ -1,6 +1,6 @@
-knotifications (5.20.0-1~6.gbpb554c8) UNRELEASED; urgency=medium
+knotifications (5.21.0-1~1.gbp1e5f20) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @b554c8e619b052594b75720696c8655550a18cfd **
+  ** SNAPSHOT build @1e5f20464f64c03e36776eaf85d9c72ce226a29b **
 
   [ Maximiliano Curia ]
   * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
@@ -17,8 +17,14 @@ knotifications (5.20.0-1~6.gbpb554c8) UNRELEASED; urgency=medium
   * UNRELEASED
   * Update acc test script
   * UNRELEASED
+  * uscan no longer supports more than one main upstream tarball being listed
 
- -- Maximiliano Curia <jenkins@amadeus.gnuservers.com.ar>  Fri, 01 Apr 2016 17:14:32 +0200
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Sun, 10 Apr 2016 10:14:19 +0200
 
 knotifications (5.19.0-1) experimental; urgency=medium
 
