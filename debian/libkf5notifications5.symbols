@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.18.0 amd64 i386
+# SymbolsHelper-Confirmed: 5.19.0 amd64
 libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN12KNotifyImage7toImageEv@Base 4.97.0
  _ZN13KNotification10addContextERK5QPairI7QStringS1_E@Base 4.96.0
@@ -215,5 +215,5 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZTV19KNotificationPlugin@Base 5.3.0+git20141106.1401
  _ZTV19KStatusNotifierItem@Base 4.96.0
  _ZTV25KNotificationRestrictions@Base 4.96.0
- (optional=templinst)_ZZZN25KNotificationRestrictions7PrivateC4EPS_6QFlagsINS_7ServiceEEENKUlvE_clEvE15qstring_literal@Base 5.18.0
+ (optional=templinst)_ZZZN25KNotificationRestrictions7PrivateC4EPS_6QFlagsINS_7ServiceEEENKUlvE_clEvE15qstring_literal@Base 5.19.0
  (c++)"non-virtual thunk to KPassivePopup::~KPassivePopup()@Base" 4.96.0
