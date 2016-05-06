@@ -1,6 +1,6 @@
-knotifications (5.21.0-1~2.gbp2afeec) UNRELEASED; urgency=medium
+knotifications (5.21.0-1~3.gbp76eb13) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @2afeec5dea21a17048befcaa741d492ed1144895 **
+  ** SNAPSHOT build @76eb13f6f312ae60a097ab401bf89ea548e47583 **
 
   [ Maximiliano Curia ]
   * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
@@ -10,6 +10,7 @@ knotifications (5.21.0-1~2.gbp2afeec) UNRELEASED; urgency=medium
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
+  * Bump Standards-Version to 3.9.8
 
   [ Maximiliano Curia ]
   * UNRELEASED
@@ -25,7 +26,7 @@ knotifications (5.21.0-1~2.gbp2afeec) UNRELEASED; urgency=medium
   [ Maximiliano Curia ]
   * Add dbus-x11 as a build dependency (needed for the auto tests)
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Mon, 11 Apr 2016 09:18:54 +0200
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Fri, 06 May 2016 20:35:39 +0200
 
 knotifications (5.19.0-1) experimental; urgency=medium
 
