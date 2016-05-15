@@ -1,3 +1,11 @@
+knotifications (5.22.0-1~1.gbp86518d) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @86518d418ef1ddd6b792a37432548ce7be015ca6 **
+
+  * Update build-deps and deps with the info from cmake
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Sun, 15 May 2016 14:14:34 +0200
+
 knotifications (5.21.0-1) experimental; urgency=medium
 
   [ Maximiliano Curia ]
