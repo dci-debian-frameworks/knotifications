@@ -1,11 +1,17 @@
-knotifications (5.25.0-1~1.gbp1e9d1c) UNRELEASED; urgency=medium
+knotifications (5.25.0-1~2.gbpe2f174) UNRELEASED; urgency=medium
 
+  ** SNAPSHOT build @e2f174c324e33d63346034c0812cdf719ee0f731 **
+
+  [ Automatic packaging ]
   ** SNAPSHOT build @1e9d1c2e28976fda1af5809fedd19a34a6542f06 **
 
   * Update build-deps and deps with the info from cmake
   * Update build-deps and deps with the info from cmake
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Sat, 13 Aug 2016 14:14:10 +0200
+  [ Maximiliano Curia ]
+  * Bump group breaks (5.25)
+
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Wed, 17 Aug 2016 22:14:14 +0200
 
 knotifications (5.23.0-1) unstable; urgency=medium
 
