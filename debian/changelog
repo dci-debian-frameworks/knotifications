@@ -1,3 +1,11 @@
+knotifications (5.26.0-1~1.gbpc746a5) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @c746a5203d9b85c61aa18f6cccab9933308dc276 **
+
+  * Update build-deps and deps with the info from cmake
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Sat, 10 Sep 2016 14:14:47 +0200
+
 knotifications (5.25.0-1) unstable; urgency=medium
 
   [ Automatic packaging ]
