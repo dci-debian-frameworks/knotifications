@@ -9,4 +9,4 @@ override_dh_strip:
 	$(overridden_command) --dbgsym-migration='libkf5notifications5-dbg (<= 5.19.0-1~~)'
 
 override_dh_auto_test:
-	dbus-launch --exit-with-session $(overriden_command)
+	dbus-run-session -- $(overriden_command)
