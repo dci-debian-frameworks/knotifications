@@ -1,3 +1,9 @@
+knotifications (5.26.0-2) unstable; urgency=medium
+
+  * Fix dh_auto_test invocation.
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 29 Sep 2016 21:58:21 +0200
+
 knotifications (5.26.0-1) unstable; urgency=medium
 
   [ Automatic packaging ]
