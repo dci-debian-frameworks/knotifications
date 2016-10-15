@@ -1,18 +1,17 @@
-knotifications (5.27.0-1~2.gbp98527b) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @98527bb9f1a7bd9c113fb0f458b8a03514ded656 **
+knotifications (5.27.0-1) unstable; urgency=medium
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
-  * UNRELEASED
 
   [ Maximiliano Curia ]
+  * New upstream release (5.27)
   * Add upstream patches:
      - Don-t-deref-an-object-we-haven-t-referenced-when-notifica.patch
      - Fix-crashes-in-NotifyByAudio.patch
      - KNotifications-Don-t-use-KPassivePopup-without-QApplicati.patch
+  * Bump group breaks (5.27)
 
- -- Automatic packaging <jenkins@gnuservers.com.ar>  Sat, 15 Oct 2016 12:14:26 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 15 Oct 2016 17:01:16 +0200
 
 knotifications (5.26.0-2) unstable; urgency=medium
 
