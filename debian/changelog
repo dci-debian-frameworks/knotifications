@@ -2,7 +2,14 @@ knotifications (5.27.0-1~1.gbp4592f2) UNRELEASED; urgency=medium
 
   ** SNAPSHOT build @4592f25037c6dcd5b0b78700d8cd01c9eb872bf1 **
 
+  [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * Add upstream patches:
+     - Don-t-deref-an-object-we-haven-t-referenced-when-notifica.patch
+     - Fix-crashes-in-NotifyByAudio.patch
+     - KNotifications-Don-t-use-KPassivePopup-without-QApplicati.patch
 
  -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Sat, 08 Oct 2016 14:14:54 +0200
 

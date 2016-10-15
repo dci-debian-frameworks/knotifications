@@ -1,0 +1,39 @@
+From: Kai Uwe Broulik <kde@privat.broulik.de>
+Date: Fri, 14 Oct 2016 09:29:50 +0200
+Subject: [KNotifications] Don't use KPassivePopup without QApplication
+
+When using KNotification from a QGuiApplication and there is no notification service present,
+the application will assert.
+
+CHANGELOG: KNotification will no longer crash when using it in a QGuiApplication and no notification service is running
+
+BUG: 370667
+REVIEW: 129177
+---
+ src/notifybypopup.cpp | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/src/notifybypopup.cpp b/src/notifybypopup.cpp
+index 7d69a36..fe948ce 100644
+--- a/src/notifybypopup.cpp
++++ b/src/notifybypopup.cpp
+@@ -30,6 +30,7 @@
+ #include "knotification.h"
+ #include "debug_p.h"
+ 
++#include <QApplication>
+ #include <QBuffer>
+ #include <QImage>
+ #include <QLabel>
+@@ -284,6 +285,11 @@ void NotifyByPopup::notify(KNotification *notification, const KNotifyConfig &not
+         return;
+     }
+ 
++    if (!qobject_cast<QApplication *>(QCoreApplication::instance())) {
++        qCWarning(LOG_KNOTIFICATIONS) << "KNotification did not detect any running org.freedesktop.Notifications server and fallback notifications cannot be used without a QApplication!";
++        return;
++    }
++
+     // last fallback - display the popup using KPassivePopup
+     KPassivePopup *pop = new KPassivePopup(notification->widget());
+     d->passivePopups.insert(notification, pop);
