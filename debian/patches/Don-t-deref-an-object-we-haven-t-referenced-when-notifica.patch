@@ -1,0 +1,47 @@
+From: David Edmundson <kde@davidedmundson.co.uk>
+Date: Tue, 11 Oct 2016 12:17:18 +0100
+Subject: Don't deref an object we haven't referenced when notification has no
+ action
+
+KNotificatitionManager::self() has an early check if a notification has
+no actions. If it has no actions it tries to close the notification
+early. However it's dereferencing an object that it has not referenced,
+sending the ref count to -1, a corrupt state that is not handled
+gracefully in KNotification, and we don't ever close the notification.
+
+By referencing and dereferencing we're still calling the cleanup in
+KNotification (if applicable) but without sending a ref count negative.
+
+This fixes ksmserver waiting for the logout sound to play; which
+currently never emits close, as the default setup has no logout sound.
+
+REVIEW: 129146
+---
+ src/knotification.cpp        | 1 +
+ src/knotificationmanager.cpp | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/src/knotification.cpp b/src/knotification.cpp
+index 352cf49..b14fa44 100644
+--- a/src/knotification.cpp
++++ b/src/knotification.cpp
+@@ -375,6 +375,7 @@ void KNotification::ref()
+ }
+ void KNotification::deref()
+ {
++    Q_ASSERT(d->ref > 0);
+     d->ref--;
+     if (d->ref == 0) {
+         d->id = -1;
+diff --git a/src/knotificationmanager.cpp b/src/knotificationmanager.cpp
+index c315db9..cd44ca7 100644
+--- a/src/knotificationmanager.cpp
++++ b/src/knotificationmanager.cpp
+@@ -199,6 +199,7 @@ int KNotificationManager::notify(KNotification *n)
+ 
+     if (notifyActions.isEmpty() || notifyActions == QLatin1String("None")) {
+         // this will cause KNotification closing itself fast
++        n->ref();
+         n->deref();
+         return -1;
+     }

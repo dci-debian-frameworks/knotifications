@@ -1,3 +1,18 @@
+knotifications (5.27.0-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.27)
+  * Add upstream patches:
+     - Don-t-deref-an-object-we-haven-t-referenced-when-notifica.patch
+     - Fix-crashes-in-NotifyByAudio.patch
+     - KNotifications-Don-t-use-KPassivePopup-without-QApplicati.patch
+  * Bump group breaks (5.27)
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 15 Oct 2016 17:01:16 +0200
+
 knotifications (5.27.0-0neon) xenial; urgency=medium
 
   * New release

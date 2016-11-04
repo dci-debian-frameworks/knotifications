@@ -1,0 +1,93 @@
+From: Albert Astals Cid <aacid@kde.org>
+Date: Tue, 4 Oct 2016 23:25:49 +0200
+Subject: Fix crashes in NotifyByAudio
+
+Phonon::MediaObject::stop does not emit finished and thus onAudioFinished is not called and thus finished() was not called and then when closing the app, the notification manager would go and delete all the non finished notifications, meaning it would call close() again, add the same Phonon::MediaObject to m_reusablePhonons again and then crash because it would delete them twice in the destructor
+
+Testing Done:
+  configure konsole notifications to emit sound on "Bell in Visible Session" and also show an info box.
+  make it bell and quickly close the info box.
+  close konsole.
+  without this patch it will crash.
+
+REVIEw: 129092
+---
+ src/notifybyaudio.cpp | 30 +++++++++++++++++++-----------
+ src/notifybyaudio.h   |  2 ++
+ 2 files changed, 21 insertions(+), 11 deletions(-)
+
+diff --git a/src/notifybyaudio.cpp b/src/notifybyaudio.cpp
+index 903e996..7c5f06b 100644
+--- a/src/notifybyaudio.cpp
++++ b/src/notifybyaudio.cpp
+@@ -111,6 +111,7 @@ void NotifyByAudio::notify(KNotification *notification, KNotifyConfig *config)
+         connect(m, SIGNAL(currentSourceChanged(Phonon::MediaSource)), SLOT(onAudioSourceChanged(Phonon::MediaSource)));
+     }
+ 
++    Q_ASSERT(!m_notifications.value(m));
+     m_notifications.insert(m, notification);
+ }
+ 
+@@ -127,9 +128,8 @@ void NotifyByAudio::close(KNotification *notification)
+         return;
+     }
+ 
+-    // this should call onAudioFinished() which also does finish() on the notification
+     m->stop();
+-    m_reusablePhonons.append(m);
++    finishNotification(notification, m);
+ }
+ 
+ void NotifyByAudio::onAudioFinished()
+@@ -140,21 +140,29 @@ void NotifyByAudio::onAudioFinished()
+         return;
+     }
+ 
+-    if (KNotification *notification = m_notifications.value(m, nullptr)) {
+-        //if the sound is short enough, we can't guarantee new sounds are
+-        //enqueued before finished is emitted.
+-        //so to make sure we are looping restart it when the sound finished
+-        if (notification->flags() & KNotification::LoopSound) {
+-            m->play();
+-            return;
+-        }
++    KNotification *notification = m_notifications.value(m, nullptr);
++
++    //if the sound is short enough, we can't guarantee new sounds are
++    //enqueued before finished is emitted.
++    //so to make sure we are looping restart it when the sound finished
++    if (notification && (notification->flags() & KNotification::LoopSound)) {
++        m->play();
++        return;
++    }
+ 
++    finishNotification(notification, m);
++}
++
++void NotifyByAudio::finishNotification(KNotification *notification, Phonon::MediaObject *m)
++{
++    m_notifications.remove(m);
++
++    if (notification) {
+         finish(notification);
+     }
+ 
+     disconnect(m, SIGNAL(currentSourceChanged(Phonon::MediaSource)), this, SLOT(onAudioSourceChanged(Phonon::MediaSource)));
+ 
+-    m_notifications.remove(m);
+     m_reusablePhonons.append(m);
+ }
+ 
+diff --git a/src/notifybyaudio.h b/src/notifybyaudio.h
+index 6726a93..676b6e3 100644
+--- a/src/notifybyaudio.h
++++ b/src/notifybyaudio.h
+@@ -54,6 +54,8 @@ private Q_SLOTS:
+ 
+ 
+ private:
++    void finishNotification(KNotification *notification, Phonon::MediaObject *m);
++
+     QList<Phonon::MediaObject*> m_reusablePhonons;
+     QHash<Phonon::MediaObject*, KNotification*> m_notifications;
+     Phonon::AudioOutput *m_audioOutput;
