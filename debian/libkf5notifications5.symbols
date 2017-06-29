@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.19.0 amd64
+# SymbolsHelper-Confirmed: 5.35.0 amd64
 libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN12KNotifyImage7toImageEv@Base 4.97.0
  _ZN13KNotification10addContextERK5QPairI7QStringS1_E@Base 4.96.0
@@ -14,6 +14,7 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN13KNotification16action2ActivatedEv@Base 4.96.0
  _ZN13KNotification16action3ActivatedEv@Base 4.96.0
  _ZN13KNotification16setComponentNameERK7QString@Base 4.96.0
+ _ZN13KNotification16setDefaultActionERK7QString@Base 5.35.0
  _ZN13KNotification16staticMetaObjectE@Base 4.96.0
  _ZN13KNotification22standardEventToEventIdENS_13StandardEventE@Base 5.8.0+git20150317.0114+15.04
  _ZN13KNotification23standardEventToIconNameENS_13StandardEventE@Base 5.8.0+git20150317.0114+15.04
@@ -34,6 +35,7 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN13KNotification7Private11raiseWidgetEP7QWidget@Base 4.96.0
  _ZN13KNotification7ignoredEv@Base 4.96.0
  _ZN13KNotification7setTextERK7QString@Base 4.96.0
+ _ZN13KNotification7setUrlsERK5QListI4QUrlE@Base 5.35.0
  _ZN13KNotification8activateEj@Base 4.96.0
  _ZN13KNotification8setFlagsERK6QFlagsINS_16NotificationFlagEE@Base 4.96.0
  _ZN13KNotification8setTitleERK7QString@Base 4.96.0
@@ -155,12 +157,16 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN25KNotificationRestrictions7Private25stopScreenSaverPreventionEv@Base 4.96.0
  _ZN25KNotificationRestrictions7Private26startScreenSaverPreventionEv@Base 4.96.0
  _ZN25KNotificationRestrictionsC1E6QFlagsINS_7ServiceEEP7QObject@Base 4.96.0
+ _ZN25KNotificationRestrictionsC1E6QFlagsINS_7ServiceEERK7QStringP7QObject@Base 5.35.0
  _ZN25KNotificationRestrictionsC2E6QFlagsINS_7ServiceEEP7QObject@Base 4.96.0
+ _ZN25KNotificationRestrictionsC2E6QFlagsINS_7ServiceEERK7QStringP7QObject@Base 5.35.0
  _ZN25KNotificationRestrictionsD0Ev@Base 4.96.0
  _ZN25KNotificationRestrictionsD1Ev@Base 4.96.0
  _ZN25KNotificationRestrictionsD2Ev@Base 4.96.0
  _ZNK13KNotification10metaObjectEv@Base 4.96.0
+ _ZNK13KNotification13defaultActionEv@Base 5.35.0
  _ZNK13KNotification4textEv@Base 4.96.0
+ _ZNK13KNotification4urlsEv@Base 5.35.0
  _ZNK13KNotification5flagsEv@Base 4.96.0
  _ZNK13KNotification5titleEv@Base 4.96.0
  _ZNK13KNotification6pixmapEv@Base 4.96.0
@@ -215,5 +221,5 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZTV19KNotificationPlugin@Base 5.3.0+git20141106.1401
  _ZTV19KStatusNotifierItem@Base 4.96.0
  _ZTV25KNotificationRestrictions@Base 4.96.0
- (optional=templinst)_ZZZN25KNotificationRestrictions7PrivateC4EPS_6QFlagsINS_7ServiceEEENKUlvE_clEvE15qstring_literal@Base 5.19.0
+ (optional=templinst|arch=!amd64)_ZZZN25KNotificationRestrictions7PrivateC4EPS_6QFlagsINS_7ServiceEEENKUlvE_clEvE15qstring_literal@Base 5.19.0
  (c++)"non-virtual thunk to KPassivePopup::~KPassivePopup()@Base" 4.96.0
