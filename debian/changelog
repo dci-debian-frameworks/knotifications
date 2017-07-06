@@ -1,12 +1,21 @@
-knotifications (5.35.0-1~) UNRELEASED; urgency=medium
+knotifications (5.35.0-1~1) UNRELEASED; urgency=medium
 
   [ Harald Sitter ]
   * test would internally require dbus-x11 due to qtest_dbus.h
+  * acc c++11. now used more liberally
 
   [ Maximiliano Curia ]
   * New upstream release (5.35.0).
+  * Bump Standards-Version to 4.0.0.
+  * Update build-deps and deps with the info from cmake
+  * Bump group breaks (5.35)
+  * Update symbols files
 
- -- Maximiliano Curia <maxy@debian.org>  Mon, 26 Jun 2017 17:48:32 +0200
+  [ Raymond Wooninck ]
+  * Add signing key
+  * also include signing-key
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 06 Jul 2017 22:53:55 +0200
 
 knotifications (5.28.0-1) unstable; urgency=medium
 
