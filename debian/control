@@ -38,9 +38,9 @@ Description: Framework for desktop notifications
  feedback and persistent events.
  .
  Contains debug symbols for KNotifications.
-Breaks: libkf5kdelibs4support-dev (<< 5.35),
-        libkf5khtml-dev (<< 5.35),
-        libkf5parts-dev (<< 5.35)
+Breaks: libkf5kdelibs4support-dev (<< 5.36),
+        libkf5khtml-dev (<< 5.36),
+        libkf5parts-dev (<< 5.36)
 
 Package: libkf5notifications5
 Architecture: any
@@ -51,14 +51,14 @@ Depends: libkf5notifications-data (= ${source:Version}),
 Description: Framework for desktop notifications
  KNotification is used to notify the user of an event. It covers
  feedback and persistent events.
-Breaks: frameworkintegration (<< 5.35),
-        kio (<< 5.35),
-        libkf5kdelibs4support5 (<< 5.35),
-        libkf5khtml5 (<< 5.35),
-        libkf5plasma5 (<< 5.35),
-        libkf5wallet-bin (<< 5.35),
-        libkwalletbackend5-5 (<< 5.35),
-        plasma-framework (<< 5.35)
+Breaks: frameworkintegration (<< 5.36),
+        kio (<< 5.36),
+        libkf5kdelibs4support5 (<< 5.36),
+        libkf5khtml5 (<< 5.36),
+        libkf5plasma5 (<< 5.36),
+        libkf5wallet-bin (<< 5.36),
+        libkwalletbackend5-5 (<< 5.36),
+        plasma-framework (<< 5.36)
 
 Package: libkf5notifications-data
 Architecture: all
