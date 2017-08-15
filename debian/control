@@ -21,48 +21,11 @@ Build-Depends: cmake (>= 3.0~),
                pkg-kde-tools (>= 0.15.15ubuntu1~),
                qtbase5-dev (>= 5.7.0~),
                qttools5-dev (>= 5.4),
-               qttools5-dev-tools (>= 5.4)
+               qttools5-dev-tools (>= 5.4),
 Standards-Version: 4.0.1
 Homepage: https://projects.kde.org/projects/frameworks/knotifications
 Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/frameworks/knotifications.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/frameworks/knotifications.git
-
-Package: libkf5notifications-dev
-Section: libdevel
-Architecture: any
-Depends: libkf5config-dev (>= 5.37.0~),
-         libkf5coreaddons-dev (>= 5.37.0~),
-         libkf5notifications5 (= ${binary:Version}),
-         libkf5windowsystem-dev (>= 5.37.0~),
-         qtbase5-dev (>= 5.7.0~),
-         ${misc:Depends}
-Breaks: libkf5kdelibs4support-dev (<< 5.37),
-        libkf5khtml-dev (<< 5.37),
-        libkf5parts-dev (<< 5.37)
-Recommends: libkf5notifications-doc (= ${source:Version})
-Description: Framework for desktop notifications
- KNotification is used to notify the user of an event. It covers
- feedback and persistent events.
- .
- Contains debug symbols for KNotifications.
-
-Package: libkf5notifications5
-Architecture: any
-Multi-Arch: same
-Depends: libkf5notifications-data (= ${source:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
-Breaks: frameworkintegration (<< 5.37),
-        kio (<< 5.37),
-        libkf5kdelibs4support5 (<< 5.37),
-        libkf5khtml5 (<< 5.37),
-        libkf5plasma5 (<< 5.37),
-        libkf5wallet-bin (<< 5.37),
-        libkwalletbackend5-5 (<< 5.37),
-        plasma-framework (<< 5.37)
-Description: Framework for desktop notifications
- KNotification is used to notify the user of an event. It covers
- feedback and persistent events.
 
 Package: libkf5notifications-data
 Architecture: all
@@ -74,6 +37,25 @@ Description: Framework for desktop notifications
  .
  This package contains the translations.
 
+Package: libkf5notifications-dev
+Section: libdevel
+Architecture: any
+Depends: libkf5config-dev (>= 5.37.0~),
+         libkf5coreaddons-dev (>= 5.37.0~),
+         libkf5notifications5 (= ${binary:Version}),
+         libkf5windowsystem-dev (>= 5.37.0~),
+         qtbase5-dev (>= 5.7.0~),
+         ${misc:Depends},
+Breaks: libkf5kdelibs4support-dev (<< 5.37),
+        libkf5khtml-dev (<< 5.37),
+        libkf5parts-dev (<< 5.37),
+Recommends: libkf5notifications-doc (= ${source:Version})
+Description: Framework for desktop notifications
+ KNotification is used to notify the user of an event. It covers
+ feedback and persistent events.
+ .
+ Contains debug symbols for KNotifications.
+
 Package: libkf5notifications-doc
 Architecture: all
 Multi-Arch: foreign
@@ -83,3 +65,21 @@ Description: Framework for desktop notifications
  feedback and persistent events.
  .
  This package contains the qch documentation files.
+
+Package: libkf5notifications5
+Architecture: any
+Multi-Arch: same
+Depends: libkf5notifications-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: frameworkintegration (<< 5.37),
+        kio (<< 5.37),
+        libkf5kdelibs4support5 (<< 5.37),
+        libkf5khtml5 (<< 5.37),
+        libkf5plasma5 (<< 5.37),
+        libkf5wallet-bin (<< 5.37),
+        libkwalletbackend5-5 (<< 5.37),
+        plasma-framework (<< 5.37),
+Description: Framework for desktop notifications
+ KNotification is used to notify the user of an event. It covers
+ feedback and persistent events.
