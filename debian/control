@@ -65,6 +65,7 @@ Description: Framework for desktop notifications
  feedback and persistent events.
  .
  This package contains the qch documentation files.
+Section: doc
 
 Package: libkf5notifications5
 Architecture: any
