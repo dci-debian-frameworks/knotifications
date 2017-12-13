@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.35.0 amd64
+# SymbolsHelper-Confirmed: 5.41.0 amd64
 libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN12KNotifyImage7toImageEv@Base 4.97.0
  _ZN13KNotification10addContextERK5QPairI7QStringS1_E@Base 4.96.0
@@ -32,7 +32,6 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN13KNotification5eventERK7QStringS2_S2_S2_P7QWidgetRK6QFlagsINS_16NotificationFlagEES2_@Base 5.3.0+git20141030.0311
  _ZN13KNotification6closedEv@Base 4.96.0
  _ZN13KNotification6updateEv@Base 4.96.0
- _ZN13KNotification7Private11raiseWidgetEP7QWidget@Base 4.96.0
  _ZN13KNotification7ignoredEv@Base 4.96.0
  _ZN13KNotification7setTextERK7QString@Base 4.96.0
  _ZN13KNotification7setUrlsERK5QListI4QUrlE@Base 5.35.0
@@ -152,10 +151,6 @@ libKF5Notifications.so.5 libkf5notifications5 #MINVER#
  _ZN25KNotificationRestrictions11qt_metacallEN11QMetaObject4CallEiPPv@Base 4.96.0
  _ZN25KNotificationRestrictions11qt_metacastEPKc@Base 4.96.0
  _ZN25KNotificationRestrictions16staticMetaObjectE@Base 4.96.0
- _ZN25KNotificationRestrictions7Private20determineProgramNameEv@Base 4.96.0
- _ZN25KNotificationRestrictions7Private23screensaverFakeKeyEventEv@Base 4.96.0
- _ZN25KNotificationRestrictions7Private25stopScreenSaverPreventionEv@Base 4.96.0
- _ZN25KNotificationRestrictions7Private26startScreenSaverPreventionEv@Base 4.96.0
  _ZN25KNotificationRestrictionsC1E6QFlagsINS_7ServiceEEP7QObject@Base 4.96.0
  _ZN25KNotificationRestrictionsC1E6QFlagsINS_7ServiceEERK7QStringP7QObject@Base 5.35.0
  _ZN25KNotificationRestrictionsC2E6QFlagsINS_7ServiceEEP7QObject@Base 4.96.0
