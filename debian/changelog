@@ -1,8 +1,10 @@
-knotifications (5.38.0-1~) UNRELEASED; urgency=medium
+knotifications (5.41.0-1~) UNRELEASED; urgency=medium
 
   * New upstream release (5.38.0).
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (5.41.0).
 
- -- Maximiliano Curia <maxy@debian.org>  Mon, 18 Sep 2017 16:52:08 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 13 Dec 2017 12:07:34 -0300
 
 knotifications (5.37.0-2) sid; urgency=medium
 
