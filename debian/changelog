@@ -1,3 +1,21 @@
+knotifications (5.41.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 08 Dec 2017 14:47:35 +0000
+
+knotifications (5.40.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 10 Nov 2017 12:59:10 +0000
+
+knotifications (5.39.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Sun, 15 Oct 2017 11:43:55 +0000
+
 knotifications (5.38.0-0neon) xenial; urgency=medium
 
   * New release
